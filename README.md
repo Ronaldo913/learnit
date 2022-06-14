@@ -1,5 +1,9 @@
 # learn it + Bio
 
+<!-- <div align="center">
+  <img src=".png" style="width:400px; height:400px;" />
+ </div> -->
+
 Learn It + é um aplicativo de estudos que ajuda os
 estudantes a ter uma melhor compreensão da disciplina
 de biologia. Nele contém explicações de cada conteúdo,
