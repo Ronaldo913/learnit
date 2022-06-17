@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learnit/pages/assuntos_page.dart';
 import 'package:learnit/pages/questoes_page.dart';
+import 'package:learnit/pages/pacote_page.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -24,13 +25,27 @@ class _HomepageState extends State<Homepage> {
             color: Colors.amberAccent,
           ),
           Container(
-            height: 400.0,
-            color: Color(0xFFA5D6A7),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Padding(padding: EdgeInsets.all(16),
                   child: ElevatedButton(onPressed: onPressedButton,
+                    child: const Padding(padding: EdgeInsets.symmetric(vertical: 24),
+                      child: const Text(
+                        'CONTEÚDOS',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: Color(0xFF125C13),
+                    ),
+                  ),
+                ),
+                Padding(padding: EdgeInsets.all(16),
+                  child: ElevatedButton(onPressed: onPressedButton2,
                     child: const Padding(padding: EdgeInsets.symmetric(vertical: 24),
                       child: const Text(
                         'QUESTÕES',
@@ -44,8 +59,24 @@ class _HomepageState extends State<Homepage> {
                       primary: Color(0xFF125C13),
                     ),
                   ),
-                )
-
+                ),
+                SizedBox(height: 240),
+                Padding(padding: EdgeInsets.all(16),
+                  child: ElevatedButton(onPressed: onPressedButton3,
+                    child: const Padding(padding: EdgeInsets.symmetric(vertical: 24),
+                      child: const Text(
+                        'PREMIUM',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      primary: Color(0xFFff1616),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
@@ -59,7 +90,29 @@ class _HomepageState extends State<Homepage> {
       context,
       MaterialPageRoute(
         builder: (context){
+          return const AssuntosPage();
+        },
+      ),
+    );
+  }
+
+  void onPressedButton2(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context){
           return const QuestoesPage();
+        },
+      ),
+    );
+  }
+
+  void onPressedButton3(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context){
+          return const PacotePage();
         },
       ),
     );
