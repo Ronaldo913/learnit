@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:learnit/pages/conteudo_page.dart';
+import 'package:learnit/pages/home_page.dart';
+
 
 class AssuntosPage extends StatefulWidget {
   const AssuntosPage({Key? key}) : super(key: key);
@@ -43,7 +45,7 @@ class _AssuntosPageState extends State<AssuntosPage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const TelaAssuntos();
+          return const Homepage();
         },
       ),
     );
@@ -75,7 +77,7 @@ buildCardAssuntos({
                     context,
                     MaterialPageRoute(
                       builder: (context) {
-                        return Homepage(); //pagina da maia
+                        return TelaAssuntos(); //pagina da maia
                       },
                     ),
                   );
