@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:learnit/pages/home_page.dart';
+import 'package:learnit/pages/conteudo_page.dart';
 
 class AssuntosPage extends StatefulWidget {
   const AssuntosPage({Key? key}) : super(key: key);
@@ -43,7 +43,7 @@ class _AssuntosPageState extends State<AssuntosPage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const Homepage();
+          return const TelaAssuntos();
         },
       ),
     );
