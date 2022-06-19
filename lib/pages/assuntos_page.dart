@@ -50,7 +50,6 @@ class _AssuntosPageState extends State<AssuntosPage> {
       ),
     );
   }
-
 }
 buildCardAssuntos({
   required String titulo,
