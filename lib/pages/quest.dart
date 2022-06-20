@@ -12,8 +12,9 @@ class _QuestPageState extends State<QuestPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Learn It + Bio'),
+        title: const Text('QUESTÕES - CITOLOGIA'),
         backgroundColor: const Color(0xFF0B4619),
+        toolbarHeight: 64,
       ),
       body: ListView(
         children: [
