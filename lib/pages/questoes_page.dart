@@ -18,6 +18,7 @@ class _QuestoesPageState extends State<QuestoesPage> {
       appBar: AppBar(
           centerTitle: false,
           backgroundColor: Color(0xFF0B4619),
+          toolbarHeight: 64,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
