@@ -22,16 +22,25 @@ class _QuestPageState extends State<QuestPage> {
             padding: EdgeInsets.all(10.0),
             alignment: Alignment.topLeft,
             width: 400,
-            height: 500,
+            height: 1200,
             decoration: BoxDecoration(
               border: Border.all(),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text("Questão 1 - ENUNCIADO", style: TextStyle(fontSize: 25)),
+                Text("Q.1 - ENUNCIADO", style: TextStyle(fontSize: 25)),
                 SizedBox(height: 8),
-                Text("Alternativa A", textAlign: TextAlign.start),
+                Text("Alternativa A",textAlign: TextAlign.left, style: TextStyle(fontSize: 18)),
+                Text("Alternativa B",textAlign: TextAlign.left, style: TextStyle(fontSize: 18)),
+                Text("Alternativa C",textAlign: TextAlign.left, style: TextStyle(fontSize: 18)),
+                Text("Alternativa D",textAlign: TextAlign.left, style: TextStyle(fontSize: 18)),
+                SizedBox(height: 700),
+                
+                Text("RESPOSTA Q.1", style: TextStyle(fontSize: 25)),
+                SizedBox(height: 8),
+                Text("ALTERNATIVA",textAlign: TextAlign.left, style: TextStyle(fontSize: 18)),
+                Text("EXPLICAÇÃO",textAlign: TextAlign.left, style: TextStyle(fontSize: 18)),
               ],
             ),
           ),
