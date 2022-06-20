@@ -17,20 +17,25 @@ class _AssuntosPageState extends State<AssuntosPage> {
     return Scaffold(
       backgroundColor: Colors.green[100],
       appBar: AppBar(
-          centerTitle: false,
-          backgroundColor: Color(0xFF0B4619),
-          toolbarHeight: 64,
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              ElevatedButton(
-                style: ElevatedButton.styleFrom( primary: Color(0xFF0B4619)),
-                onPressed: goHome,
-                child: Icon(Icons.home, size: 28.0, color: Colors.white,
+        title: Text('MENU - CONTEÚDOS'),
+        backgroundColor: Color(0xFF0B4619),
+        toolbarHeight: 64,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.home),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const Homepage();
+                  },
                 ),
-              ),
-            ],
-          )
+              );
+            },
+          ),
+          // add more IconButton
+        ],
       ),
       body: Padding(padding: const EdgeInsets.all(16.0),
         child: ListView(
