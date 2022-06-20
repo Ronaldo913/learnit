@@ -14,16 +14,16 @@ class _PacotePageState extends State<PacotePage> {
   PacoteEstudo pacote1 = PacoteEstudo(
     imagem:
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV_XD9XZ773BGiC9OsuGXVfoZjRUT-BxREnvI7BRpyLNxr6VAUPSr-TfOrY2gh89JI5xI&usqp=CAU',
-    titulo: 'Pacote Cancún 2022/2023',
+    titulo: 'Pacote Foco',
     transporte: 'Aéreo - Hotel All inclusive',
     cidade: 'CANCÚN, MEX',
     validade: 'De 10 ago 2021 até 30 set 2022',
-    desconto: 45,
+    desconto: 10,
     numDiarias: 5,
     numPessoas: 2,
     numParcelas: 6,
-    precoAntigo: 6819,
-    precoAtual: 2819,
+    precoAntigo: 19.90,
+    precoAtual: 9.90,
   );
   PacoteEstudo pacote2 = PacoteEstudo(
     imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ32k_zUkptSCbg2-SkTcWDAK4lqirR0wrX2wjkneTz7dKyRywIlwFbv_ahZxXogvnOsWc&usqp=CAU',
@@ -34,9 +34,9 @@ class _PacotePageState extends State<PacotePage> {
     desconto: 45,
     numDiarias: 7,
     numPessoas: 3,
-    numParcelas: 12,
-    precoAntigo: 4819,
-    precoAtual: 819,
+    numParcelas: 8,
+    precoAntigo: 35.00,
+    precoAtual: 20.00,
   );
 
   PacoteEstudo pacote3 = PacoteEstudo(
@@ -48,9 +48,9 @@ class _PacotePageState extends State<PacotePage> {
     desconto: 45,
     numDiarias: 7,
     numPessoas: 3,
-    numParcelas: 12,
-    precoAntigo: 4819,
-    precoAtual: 819,
+    numParcelas: 10,
+    precoAntigo: 50.00,
+    precoAtual: 30.00,
   );
 
   @override
