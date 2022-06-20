@@ -15,49 +15,48 @@ class _PacotePageState extends State<PacotePage> {
     imagem:
     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV_XD9XZ773BGiC9OsuGXVfoZjRUT-BxREnvI7BRpyLNxr6VAUPSr-TfOrY2gh89JI5xI&usqp=CAU',
     titulo: 'Pacote Foco',
-    transporte: 'Aéreo - Hotel All inclusive',
-    cidade: 'CANCÚN, MEX',
-    validade: 'De 10 ago 2021 até 30 set 2022',
     desconto: 10,
-    numDiarias: 5,
-    numPessoas: 2,
     numParcelas: 6,
     precoAntigo: 19.90,
     precoAtual: 9.90,
+    redacao: 1,
+    aula: 100,
+    exercicio: 300,
+    horas: 10,
+    duvida: 0,
   );
   PacoteEstudo pacote2 = PacoteEstudo(
     imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ32k_zUkptSCbg2-SkTcWDAK4lqirR0wrX2wjkneTz7dKyRywIlwFbv_ahZxXogvnOsWc&usqp=CAU',
-    titulo: 'Pacote Maragogi 2023',
-    transporte: 'Hotel All inclusive',
-    cidade: 'MARAGOGI, BRA',
-    validade: 'De 10 jan 2022 até 31 dez 2023',
-    desconto: 45,
-    numDiarias: 7,
-    numPessoas: 3,
+    titulo: 'Pacote Médio',
+    desconto: 10,
     numParcelas: 8,
     precoAntigo: 35.00,
     precoAtual: 20.00,
+    redacao: 3,
+    aula: 150,
+    exercicio: 500,
+    horas: 15,
+    duvida: 1,
   );
 
   PacoteEstudo pacote3 = PacoteEstudo(
     imagem: 'https://51435.cdn.simplo7.net/static/51435/sku/pacotes-especiais-pacote-premium--p-1610222593192.png',
-    titulo: 'Pacote Maragogi 2023',
-    transporte: 'Hotel All inclusive',
-    cidade: 'MARAGOGI, BRA',
-    validade: 'De 10 jan 2022 até 31 dez 2023',
-    desconto: 45,
-    numDiarias: 7,
-    numPessoas: 3,
+    titulo: 'Pacote LearnMed',
+    desconto: 10,
     numParcelas: 10,
     precoAntigo: 50.00,
     precoAtual: 30.00,
+    redacao: 5,
+    aula: 200,
+    exercicio: 700,
+    horas: 20,
+    duvida: 3,
   );
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 64,
         centerTitle: false,
         backgroundColor: const Color(0xFF0b4619),
         title: const Text(
@@ -65,14 +64,16 @@ class _PacotePageState extends State<PacotePage> {
           style: TextStyle(fontSize: 24),
         ),
       ),
+
       backgroundColor: Colors.grey[100],
+
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: ListView(
           children: [
             Container(
               decoration: BoxDecoration(
-                color: Color(0xFF0b4619),
+                color: const Color(0xFF0b4619),
                 borderRadius: BorderRadius.circular(16),
               ),
               padding: const EdgeInsets.all(16),
@@ -80,25 +81,16 @@ class _PacotePageState extends State<PacotePage> {
                 children: [
                   Expanded(
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Text(
-                          'Acrescente ao seu aprendizado esses regalias',
+                          'Acrescente ao seu \naprendizado essas regalias',
                           style: TextStyle(
                             fontSize: 24,
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-
                           ),
                         ),
-                        const Text(
-                          'Corre e aproveita a promoção',
-                          style: TextStyle(
-                            fontSize: 15,
-                            color: Colors.white,
-                          ),
-                        ),
-                        const SizedBox(height: 16),
                       ],
                     ),
                   ),
