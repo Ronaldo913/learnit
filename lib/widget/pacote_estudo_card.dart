@@ -75,6 +75,14 @@ class _CardPacoteEstudoState extends State<CardPacoteEstudo> {
                       color: Colors.green[700],
                     ),
                   ),
+
+                  SizedBox(height: 16,),
+
+                  ElevatedButton(onPressed: (){}, child: Text('ADQUIRIR'),
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.orange,
+                    )
+                  ),
                 ],
               ),
 
