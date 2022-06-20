@@ -13,8 +13,9 @@ class _TelaAssuntosState extends State<TelaAssuntos> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Assuntos'),
-          backgroundColor: Colors.green[900],
+          title: Text('CITOLOGIA'),
+          backgroundColor: Color(0xFF0B4619),
+          toolbarHeight: 64,
           actions: [
             IconButton(
               icon: Icon(Icons.home),
@@ -33,7 +34,7 @@ class _TelaAssuntosState extends State<TelaAssuntos> {
           ],
         ),
         
-        backgroundColor: Colors.green[200],
+        backgroundColor: Colors.green[100],
         body: SingleChildScrollView(
             padding: const EdgeInsets.all(20),
             child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween, crossAxisAlignment: CrossAxisAlignment.center, children: [
