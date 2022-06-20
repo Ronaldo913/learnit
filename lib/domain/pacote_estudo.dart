@@ -1,27 +1,27 @@
 class PacoteEstudo {
   final String imagem;
   final String titulo;
-  final String validade;
-  final String cidade;
-  final int numDiarias;
-  final int numPessoas;
   final int numParcelas;
   final int desconto;
-  final String transporte;
   final double precoAtual;
   final double precoAntigo;
+  final int redacao;
+  final int aula;
+  final int exercicio;
+  final int horas;
+  final int duvida;
 
   PacoteEstudo({
-    required this.validade,
-    required this.cidade,
     required this.desconto,
     required this.imagem,
     required this.titulo,
-    required this.numDiarias,
-    required this.numPessoas,
     required this.numParcelas,
-    required this.transporte,
     required this.precoAtual,
     required this.precoAntigo,
+    required this.redacao,
+    required this.aula,
+    required this.exercicio,
+    required this.horas,
+    required this.duvida,
   });
 }
