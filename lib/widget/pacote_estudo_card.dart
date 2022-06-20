@@ -47,35 +47,30 @@ class _CardPacoteEstudoState extends State<CardPacoteEstudo> {
                     style: const TextStyle(
                       fontSize: 21,
                       fontWeight: FontWeight.bold,
+                      color: Color(0xFF0b4619),
                     ),
                   ),
+
                   SizedBox(height: 8),
-                  Text(widget.pacoteEstudo.transporte),
-                  SizedBox(height: 8),
+
+                  Text('de R\$ ${widget.pacoteEstudo.precoAntigo}'),
                   Row(
                     children: [
-                      const Icon(Icons.wb_sunny_outlined),
-                      const SizedBox(width: 4),
-                      Text('${widget.pacoteEstudo.numDiarias} Diárias'),
-                      const SizedBox(width: 8),
-                      const Icon(Icons.person_outline),
-                      const SizedBox(width: 4),
-                      Text('${widget.pacoteEstudo.numPessoas} Pessoas'),
+                      Text('por '),
+                      Text(
+                        'R\$ ${widget.pacoteEstudo.precoAtual}',
+                        style: const TextStyle(
+                          color: Colors.orange,
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   ),
-                  SizedBox(height: 8),
-                  Text('A partir de R\$ ${widget.pacoteEstudo.precoAntigo}'),
-                  Text(
-                    'R\$ ${widget.pacoteEstudo.precoAtual}',
-                    style: const TextStyle(
-                      color: Colors.orange,
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+
                   const SizedBox(height: 8),
                   Text(
-                    'Cancelamento Grátis!',
+                    '*Não há cancelamento',
                     style: TextStyle(
                       color: Colors.green[700],
                     ),
