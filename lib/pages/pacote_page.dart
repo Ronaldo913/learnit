@@ -57,6 +57,7 @@ class _PacotePageState extends State<PacotePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        toolbarHeight: 64,
         centerTitle: false,
         backgroundColor: const Color(0xFF0b4619),
         title: const Text(
