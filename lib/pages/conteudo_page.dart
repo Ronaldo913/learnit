@@ -49,7 +49,7 @@ class _TelaAssuntosState extends State<TelaAssuntos> {
             buildColumnConteudo(
             paragrafo1: 'A citologia é onde as células são estudadas. A citologia passou a desenvolver-se como ciência em 1663, quando Robert Hooke cortou um pedaço de cortiça e observou ao microscópio.', 
             paragrafo2: 'Graças ao desenvolvimento da microscopia surgiu a teoria celular, onde há postulados importantes para o ramo da citoligia, como: Todos os seres vivos são constituídos por células, As atividades essenciais que caracterizam a vida ocorrem no interior das células, Novas células se formam pela divisão de células preexistentes através da divisão celular, A célula é a menor unidade da vida.', 
-            titulo2: 'TIPOS DE CÉLULAS', 
+            titulo2: 'TIPOS DE CÉLULAS',
             subtitulo: 'PROCARIONTES', 
             paragrafo3: 'Esta tem como sua principal característica a ausencia da carioteca, assim sendo, o núcleo dessa célula não é individualizado. É importante destacar que as células procariontes são as células mais primitivas e que possuem estruturas celulares mais simples. Na reprodução as células procariontes não se reproduzem por mitose. Exemplo de célula procarionte: bactérias.', 
             subtitulo2: 'EUCARIONTES',
@@ -113,31 +113,62 @@ class _TelaAssuntosState extends State<TelaAssuntos> {
               
               Text(paragrafo1 ,textAlign: TextAlign.justify, style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
               Text(paragrafo2,textAlign: TextAlign.justify, style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+
+              SizedBox(height: 24),
+
               Text(titulo2, style: TextStyle(fontSize: 22, color: Colors.green[900])),
+
+              SizedBox(height: 16),
+
               Text(subtitulo,
                   style: TextStyle(
                     fontSize: 20,
                   )),
+
+              SizedBox(height: 16),
+
               Text(paragrafo3, textAlign: TextAlign.justify, style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+
+              SizedBox(height: 16),
+
               Text(subtitulo2, style: TextStyle(fontSize: 20)),
+
+              SizedBox(height: 16),
               Text(paragrafo4, textAlign: TextAlign.justify, style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+
+              SizedBox(height: 24),
+
               Text(titulo3, style: TextStyle(fontSize: 22, color: Colors.green[900])),
+
+              SizedBox(height: 16),
               Text(paragrafo5, textAlign: TextAlign.justify, style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+
+              SizedBox(height: 16),
               Text(subtitulo3,
                   style: TextStyle(
                     fontSize: 20,
                   )),
+
+              SizedBox(height: 16),
               Text(paragrafo6, textAlign: TextAlign.justify, style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+
+              SizedBox(height: 16),
               Text(subtitulo4,
                   style: TextStyle(
                     fontSize: 20,
                   )),
+
+              SizedBox(height: 16),
               Text(paragrafo7,textAlign: TextAlign.justify, style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
               Text(paragrafo8,textAlign: TextAlign.justify, style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
+
+              SizedBox(height: 16),
               Text(subtitulo5,
                   style: TextStyle(
                     fontSize: 20,
                   )),
+
+              SizedBox(height: 16),
               Text(paragrafo9,textAlign: TextAlign.justify, style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
               Text(espaco1, style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold)),
               Image.network(imagem),
