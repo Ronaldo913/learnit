@@ -15,10 +15,11 @@ class _AssuntosPageState extends State<AssuntosPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[200],
+      backgroundColor: Colors.green[100],
       appBar: AppBar(
           centerTitle: false,
           backgroundColor: Color(0xFF0B4619),
+          toolbarHeight: 64,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
@@ -41,7 +42,7 @@ class _AssuntosPageState extends State<AssuntosPage> {
     );
   }
   void goHome() {
-    Navigator.push(
+    Navigator.pushReplacement(
       context,
       MaterialPageRoute(
         builder: (context) {
