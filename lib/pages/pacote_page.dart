@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:learnit/domain/pacote_estudo.dart';
 import 'package:learnit/pages/pacotes_detalhes.dart';
 import 'package:learnit/widget/pacote_estudo_card.dart';
+import 'package:learnit/pages/home_page.dart';
 
 class PacotePage extends StatefulWidget {
   const PacotePage({Key? key}) : super(key: key);
@@ -57,12 +58,25 @@ class _PacotePageState extends State<PacotePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: false,
-        backgroundColor: const Color(0xFF0b4619),
-        title: const Text(
-          'Premium',
-          style: TextStyle(fontSize: 24),
-        ),
+        title: Text('PREMIUM'),
+        backgroundColor: Color(0xFF0B4619),
+        toolbarHeight: 64,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.home),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const Homepage();
+                  },
+                ),
+              );
+            },
+          ),
+          // add more IconButton
+        ],
       ),
 
       backgroundColor: Colors.grey[100],
