@@ -27,36 +27,44 @@ class _PacoteDetalhesState extends State<PacoteDetalhes> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  pacote.cidade,
-                  style: const TextStyle(fontSize: 14),
-                ),
+
                 const SizedBox(height: 8),
+
                 Text(
                   pacote.titulo,
-                  style: const TextStyle(fontSize: 20),
+                  style: const TextStyle(fontSize: 20, color: Color(0xFF0b4619)),
                 ),
+
                 const SizedBox(height: 8),
-                Text(pacote.transporte),
+
                 const SizedBox(height: 8),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Text(
-                      '${pacote.numDiarias} diárias',
-                      style: const TextStyle(fontSize: 16),
+                      '${pacote.redacao} redação',
+                      style: const TextStyle(fontSize: 16, color: Colors.green),
                     ),
-                    Container(
-                      color: const Color(0xFFFD6C00),
-                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
-                      child: Text(
-                        '-${pacote.desconto}%',
-                        style: const TextStyle(
-                            fontSize: 16,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold
-                        ),
-                      ),
+                    Text(
+                      'Mais de ${pacote.aula} aulas',
+                      style: const TextStyle(fontSize: 16, color: Colors.green),
+                    ),
+                    Text(
+                      'Mais de ${pacote.exercicio} exercícios',
+                      style: const TextStyle(fontSize: 16, color: Colors.green),
+                    ),
+                    Text(
+                      '${pacote.horas} horas semanais de aula ao vivo',
+                      style: const TextStyle(fontSize: 16, color: Colors.green),
+                    ),
+                    Text(
+                      '${pacote.duvida} tira dúvidas',
+                      style: const TextStyle(fontSize: 16, color: Colors.green),
+                    ),
+                    Text(
+                      'Simulados semanais\nApostilasz\nCronograma de estudo\nResumos\n',
+                      style: const TextStyle(fontSize: 16, color: Colors.green),
                     ),
                   ],
                 ),
