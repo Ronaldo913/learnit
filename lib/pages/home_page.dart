@@ -17,20 +17,24 @@ class _HomepageState extends State<Homepage> {
       appBar: AppBar(
         title: const Text('Learn It + Bio'),
         backgroundColor: const Color(0xFF0B4619),
+        toolbarHeight: 64,
       ),
+
+      backgroundColor: Colors.blue[100],
+
       body: ListView(
         children: [
-          Container(
-            height: 250.0,
-            color: Colors.amberAccent,
-          ),
+          Image.network('https://s1.static.brasilescola.uol.com.br/be/conteudo/images/biologia.jpg'),
+
+          SizedBox(height: 24),
+
           Container(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Padding(padding: EdgeInsets.all(16),
                   child: ElevatedButton(onPressed: onPressedButton,
-                    child: const Padding(padding: EdgeInsets.symmetric(vertical: 24),
+                    child: const Padding(padding: EdgeInsets.symmetric(vertical: 16),
                       child: const Text(
                         'CONTEÚDOS',
                         style: TextStyle(
@@ -46,7 +50,7 @@ class _HomepageState extends State<Homepage> {
                 ),
                 Padding(padding: EdgeInsets.all(16),
                   child: ElevatedButton(onPressed: onPressedButton2,
-                    child: const Padding(padding: EdgeInsets.symmetric(vertical: 24),
+                    child: const Padding(padding: EdgeInsets.symmetric(vertical: 16),
                       child: const Text(
                         'QUESTÕES',
                         style: TextStyle(
@@ -60,8 +64,10 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                 ),
-                SizedBox(height: 240),
-                Padding(padding: EdgeInsets.all(16),
+
+                SizedBox(height: 180),
+
+                Padding(padding: EdgeInsets.all(20),
                   child: ElevatedButton(onPressed: onPressedButton3,
                     child: const Padding(padding: EdgeInsets.symmetric(vertical: 24),
                       child: const Text(
@@ -73,7 +79,7 @@ class _HomepageState extends State<Homepage> {
                       ),
                     ),
                     style: ElevatedButton.styleFrom(
-                      primary: Color(0xFFff1616),
+                      primary: Colors.deepPurple[900],
                     ),
                   ),
                 ),
