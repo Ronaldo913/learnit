@@ -16,20 +16,25 @@ class _QuestoesPageState extends State<QuestoesPage> {
     return Scaffold(
       backgroundColor: Colors.green[200],
       appBar: AppBar(
-          centerTitle: false,
-          backgroundColor: Color(0xFF0B4619),
-          toolbarHeight: 64,
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              ElevatedButton(
-                style: ElevatedButton.styleFrom( primary: Color(0xFF0B4619)),
-                onPressed: goHome,
-                child: Icon(Icons.home, size: 28.0, color: Colors.white,
+        title: Text('MENU - QUESTÕES'),
+        backgroundColor: Color(0xFF0B4619),
+        toolbarHeight: 64,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.home),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const Homepage();
+                  },
                 ),
-              ),
-            ],
-          )
+              );
+            },
+          ),
+          // add more IconButton
+        ],
       ),
       body: Padding(padding: const EdgeInsets.all(16.0),
         child: ListView(
