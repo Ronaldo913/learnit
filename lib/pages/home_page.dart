@@ -14,23 +14,20 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[100],
       appBar: AppBar(
         title: const Text('Learn It + Bio'),
         backgroundColor: const Color(0xFF0B4619),
         toolbarHeight: 64,
       ),
-
-      backgroundColor: Colors.blue[100],
-
-      body: ListView(
+      body: Column(
         children: [
           Image.network('https://s1.static.brasilescola.uol.com.br/be/conteudo/images/biologia.jpg'),
-
           SizedBox(height: 24),
-
           Container(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
+              mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(padding: EdgeInsets.all(16),
                   child: ElevatedButton(onPressed: onPressedButton,
@@ -64,8 +61,6 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                 ),
-
-                SizedBox(height: 180),
 
                 Padding(padding: EdgeInsets.all(20),
                   child: ElevatedButton(onPressed: onPressedButton3,

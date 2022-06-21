@@ -24,7 +24,8 @@ class _AssuntosPageState extends State<AssuntosPage> {
           IconButton(
             icon: Icon(Icons.home),
             onPressed: () {
-              Navigator.push(
+              print(" dasdasd");
+              Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
                   builder: (context) {
