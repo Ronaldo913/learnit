@@ -80,7 +80,7 @@ class _CardPacoteEstudoState extends State<CardPacoteEstudo> {
 
                   ElevatedButton(onPressed: (){}, child: Text('ADQUIRIR'),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.orange,
+                      primary: Colors.green[900],
                     )
                   ),
                 ],
