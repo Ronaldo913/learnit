@@ -82,37 +82,8 @@ class _PacotePageState extends State<PacotePage> {
       backgroundColor: Colors.grey[100],
 
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
         child: ListView(
           children: [
-            Container(
-              decoration: BoxDecoration(
-                color: const Color(0xFF0b4619),
-                borderRadius: BorderRadius.circular(16),
-              ),
-              padding: const EdgeInsets.all(16),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text(
-                          'Acrescente ao seu \naprendizado essas regalias',
-                          style: TextStyle(
-                            fontSize: 24,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 24),
-
-                ],
-              ),
-            ),
             const SizedBox(height: 24),
             CardPacoteEstudo(pacoteEstudo: pacote1),
             const SizedBox(height: 20),
