@@ -82,6 +82,7 @@ class _PacotePageState extends State<PacotePage> {
       backgroundColor: Colors.grey[100],
 
       body: Padding(
+        padding: EdgeInsets.all(16.0),
         child: ListView(
           children: [
             const SizedBox(height: 24),
