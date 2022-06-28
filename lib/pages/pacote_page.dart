@@ -14,7 +14,7 @@ class PacotePage extends StatefulWidget {
 class _PacotePageState extends State<PacotePage> {
   PacoteEstudo pacote1 = PacoteEstudo(
     imagem:
-    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV_XD9XZ773BGiC9OsuGXVfoZjRUT-BxREnvI7BRpyLNxr6VAUPSr-TfOrY2gh89JI5xI&usqp=CAU',
+    'https://ronaldo913.github.io/imagensmovel/images/foco.png',
     titulo: 'Pacote Foco',
     desconto: 10,
     numParcelas: 6,
@@ -27,7 +27,7 @@ class _PacotePageState extends State<PacotePage> {
     duvida: 0,
   );
   PacoteEstudo pacote2 = PacoteEstudo(
-    imagem: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ32k_zUkptSCbg2-SkTcWDAK4lqirR0wrX2wjkneTz7dKyRywIlwFbv_ahZxXogvnOsWc&usqp=CAU',
+    imagem: 'https://ronaldo913.github.io/imagensmovel/images/avan%C3%A7ado.png',
     titulo: 'Pacote Médio',
     desconto: 10,
     numParcelas: 8,
@@ -41,7 +41,7 @@ class _PacotePageState extends State<PacotePage> {
   );
 
   PacoteEstudo pacote3 = PacoteEstudo(
-    imagem: 'https://51435.cdn.simplo7.net/static/51435/sku/pacotes-especiais-pacote-premium--p-1610222593192.png',
+    imagem: 'https://ronaldo913.github.io/imagensmovel/images/learnmed.png',
     titulo: 'Pacote LearnMed',
     desconto: 10,
     numParcelas: 10,
