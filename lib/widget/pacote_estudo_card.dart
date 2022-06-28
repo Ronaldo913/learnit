@@ -60,7 +60,7 @@ class _CardPacoteEstudoState extends State<CardPacoteEstudo> {
                       Text(
                         'R\$ ${widget.pacoteEstudo.precoAtual}',
                         style: const TextStyle(
-                          color: Colors.orange,
+                          color: Colors.red,
                           fontSize: 28,
                           fontWeight: FontWeight.bold,
                         ),
@@ -109,7 +109,7 @@ class _CardPacoteEstudoState extends State<CardPacoteEstudo> {
                 fontSize: 15, color: Colors.white, fontWeight: FontWeight.bold),
           ),
           decoration: const BoxDecoration(
-            color: Color(0xFFfd6c00),
+            color: Color(0xFF0b4619),
             borderRadius: BorderRadius.all(
               Radius.circular(16),
             ),
