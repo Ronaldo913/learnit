@@ -95,5 +95,4 @@ class _PacotePageState extends State<PacotePage> {
       ),
     );
   }
-
 }
