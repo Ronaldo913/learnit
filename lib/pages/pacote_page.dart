@@ -14,7 +14,7 @@ class PacotePage extends StatefulWidget {
 class _PacotePageState extends State<PacotePage> {
   PacoteEstudo pacote1 = PacoteEstudo(
     imagem:
-    'https://ronaldo913.github.io/imagensmovel/images/foco.png',
+    'https://ronaldo913.github.io/ImagensPMovel/images/foco.png',
     titulo: 'Pacote Foco',
     desconto: 10,
     numParcelas: 6,
@@ -27,7 +27,7 @@ class _PacotePageState extends State<PacotePage> {
     duvida: 0,
   );
   PacoteEstudo pacote2 = PacoteEstudo(
-    imagem: 'https://ronaldo913.github.io/imagensmovel/images/avan%C3%A7ado.png',
+    imagem: 'https://ronaldo913.github.io/ImagensPMovel/images/avan%C3%A7ado.png',
     titulo: 'Pacote Médio',
     desconto: 10,
     numParcelas: 8,
@@ -41,7 +41,7 @@ class _PacotePageState extends State<PacotePage> {
   );
 
   PacoteEstudo pacote3 = PacoteEstudo(
-    imagem: 'https://ronaldo913.github.io/imagensmovel/images/learnmed.png',
+    imagem: 'https://ronaldo913.github.io/ImagensPMovel/images/learnmed.png',
     titulo: 'Pacote LearnMed',
     desconto: 10,
     numParcelas: 10,
