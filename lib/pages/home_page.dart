@@ -3,12 +3,6 @@ import 'package:learnit/pages/assuntos_page.dart';
 import 'package:learnit/pages/questoes_page.dart';
 import 'package:learnit/pages/pacote_page.dart';
 
-class Homepage extends StatefulWidget {
-  const Homepage({Key? key}) : super(key: key);
-
-  @override
-  State<Homepage> createState() => _HomepageState();
-}
 
 class _HomepageState extends State<Homepage> {
   @override
