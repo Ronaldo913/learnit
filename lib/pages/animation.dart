@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:helloworld/login_page.dart';
+import 'package:learnit/pages/login_page.dart';
 
-class Homepage extends StatefulWidget {
-  const Homepage({Key? key}) : super(key: key);
+class AnimationPage extends StatefulWidget {
+  const AnimationPage({Key? key}) : super(key: key);
 
   @override
-  State<Homepage> createState() => _HomepageState();
+  State<AnimationPage> createState() => _AnimationPageState();
 }
 
-class _HomepageState extends State<Homepage> {
+class _AnimationPageState extends State<AnimationPage> {
   @override
   void initState() {
     super.initState();
