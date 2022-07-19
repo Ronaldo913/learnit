@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:helloworld/home_page.dart';
-import 'package:helloworld/teste.dart';
+import  'package:learnit/pages/animation.dart';
+import 'package:learnit/pages/pacote_page.dart';
+import 'package:learnit/pages/home_page.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({Key? key}) : super(key: key);
@@ -190,7 +191,7 @@ class _LoginpageState extends State<Loginpage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const Teste();
+          return const PacotePage();
         },
       ),
     );
@@ -213,7 +214,7 @@ class _LoginpageState extends State<Loginpage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const Teste();
+          return const PacotePage();
         },
       ),
     );
