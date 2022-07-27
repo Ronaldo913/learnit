@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnit/pages/pacote_page.dart';
 
 class PerfilPage extends StatefulWidget {
   const PerfilPage({Key? key}) : super(key: key);
@@ -41,11 +42,11 @@ class _PerfilPageState extends State<PerfilPage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const PerfilPage(); //colocar página do Ronaldo (Premium)
+          return const PacotePage(); //colocar página do Ronaldo (Premium)
         },
       ),
     );
-  }
+  }//fim do onPressedButton
 
   buildPerfil({required String email, required String nome, required String email_escrito, required String nome_escrito, required String imagem}) {
     return SingleChildScrollView(
