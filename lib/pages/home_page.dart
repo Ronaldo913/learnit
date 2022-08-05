@@ -14,7 +14,10 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[100],
+      backgroundColor: Colors.white,
+      drawer: Drawer(
+
+      ),
       appBar: AppBar(
         title: const Text('Learn It + Bio'),
         backgroundColor: const Color(0xFF0B4619),
@@ -22,7 +25,7 @@ class _HomepageState extends State<Homepage> {
       ),
       body: Column(
         children: [
-          Image.network('https://s1.static.brasilescola.uol.com.br/be/conteudo/images/biologia.jpg'),
+          Image.network('https://ronaldo913.github.io/ImagensPMovel/images/logo.png'),
           SizedBox(height: 24),
           Container(
             child: Column(
