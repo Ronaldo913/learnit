@@ -23,7 +23,7 @@ class _LoginpageState extends State<Loginpage> {
         child: Column(
                   children: [
             SizedBox(
-              height: 25,
+              height: 40,
             ),
             Container(
               height: 210,
