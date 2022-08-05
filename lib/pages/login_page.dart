@@ -186,20 +186,161 @@ class _LoginpageState extends State<Loginpage> {
               ),
             ),
             SizedBox(
-              height: 0,
+              height: 40,
             ),
             Container(
-              child: Row(
-                children: [
-                  Padding(
-                      padding: EdgeInsets.all(0),
-                      child: Column(
-
+              height:60,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end:Alignment.bottomRight,
+                    stops:[0.3,1],
+                    colors:[
+                      Color(0xFFF58524),
+                      Color(0xFFF92B7F),
+                    ],
+                  ),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(80),
+                  )
+              ),
+              child:SizedBox.expand(
+                child:FlatButton(
+                  child:Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "Login",
+                        style:TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color:Colors.white,
+                          fontSize:20,
+                        ),
+                        textAlign: TextAlign.left,
                       ),
+                      Container(
+                        child:SizedBox(
+                          child:Image.asset("assets/bone.png"),
+                          height: 28,
+                          width:28,
+                        ),
+                      ),
+                    ],
+                  ),
+                  onPressed: () => {},
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              height:60,
+              alignment: Alignment.centerLeft,
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end:Alignment.bottomRight,
+                    stops:[0.3,1],
+                    colors:[
+                      Color(0xFFF58524),
+                      Color(0xFFF92B7F),
+                    ],
+                  ),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(80),
+                  )
+              ),
+              child:SizedBox.expand(
+                child:FlatButton(
+                  child:Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "Login",
+                        style:TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color:Colors.white,
+                          fontSize:20,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                      Container(
+                        child:SizedBox(
+                          child:Image.asset("assets/bone.png"),
+                          height: 28,
+                          width:28,
+                        ),
+                      ),
+                    ],
+                  ),
+                  onPressed: () => {},
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 60,
+              alignment: Alignment.bottomCenter,
+              decoration: BoxDecoration(
+                color:Color(0xFF3C5A99),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(70),
+                ),
+              ),
+              child: SizedBox.expand(
+                child:FlatButton(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "Login com Facebook",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color:Colors.white,
+                          fontSize:16,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                      Container(
+                        child: SizedBox(
+                          child: Image.network("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAYFBMVEU6VZ////8qS5yosdA4U54rS5r8/P0uTZtDXKOfqcs0UJ1wgbX29/q3v9gbQZfj5e9ccKxpe7J3h7jCyN7r7fQjRZmMmMJTaah+jLvS1uZLYqWXosfKz+EGOJMSPJWwudSSdZ67AAABTElEQVRoge3XYXOCMAyAYcAAFVhRtDimm///X24fNlsK9UIadmyX92vvntvN2MYkkSRJ2loAULkBH11lpToca6cDl15m3emcjjtlLHRlel/+6oUFzy7tlGbCzesczYObft7mwPMuYDPgoEI2A66H9fCqDtrxuAn/4dE4vIXtaLy8roib24Qs2u/Ou0hc+1dKW7/rn2I/zw/fNlWk6JR5+IXRBg8fNJ89we88z8M8Hjsfz/FccMHROMMowqMJDk4kWtkSD3fPFAVXTWEb42nhHnXLbzFQTYqLsOWi8WIxvQBvzIp4S7jc0Thl90fjlK8rGu8J7ykap/zeQuPLaTxeECYRjbeUGxKL32i4f1vNR9pxQe1t3gY9XO3RkbTZQfko12N8p+1Z9Nb4jx7orb/+Yfzv/lsE/31cRlFwPC7TIvhGcBlFwTeCyyguxj8B/JEUhCero8IAAAAASUVORK5CYII="),
+                          height: 28,
+                          width: 28,
+                        ),
+                      ),
+                    ],
+                  ),
+                  onPressed: () {},
+                ),
+              ),
+            ),
+            SizedBox(
+              height:10,
+            ),
+            Container(
+                height: 40,
+                child:FlatButton(
+                  child: Text(
+                    "Cadastre-se",
+                    textAlign: TextAlign.center,
                   ),
 
-                ],
-              ),
+                  onPressed: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return const RegistrationPage();
+                        },
+                      ),
+                    );
+                  },
+
+                )
             ),
           ],
         ),
