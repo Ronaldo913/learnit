@@ -12,91 +12,83 @@ class RegistrationPage extends StatefulWidget {
 class _RegistrationPageState extends State<RegistrationPage> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(child: Scaffold(
+    return SafeArea(
+        child: Scaffold(
         body: Padding(
           padding: EdgeInsets.all(16),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                SizedBox(height: 8),
-                Placeholder(fallbackHeight: 140,),
-                SizedBox(height: 16),
-                TextField(
+                Image.network("https://ronaldo913.github.io/ImagensPMovel/images/logo.png"),
+                const SizedBox(height: 16),
+                const TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(90.0)),
-                        borderSide: BorderSide(color: Colors.grey, width: 0.5)),
+                        borderRadius: BorderRadius.all(Radius.circular(90.0))),
                     labelText: 'Nome',
                   ),
                 ),
-                SizedBox(height: 16),
-                TextField(
+                const SizedBox(height: 16),
+                const TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(90.0)),
-                        borderSide: BorderSide(color: Colors.grey, width: 0.5)),
+                        borderRadius: BorderRadius.all(Radius.circular(90.0))),
                     labelText: 'Sobrenome',
                   ),
                 ),
-                SizedBox(height: 16),
-                TextField(
+                const SizedBox(height: 16),
+                const TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(90.0)),
-                        borderSide: BorderSide(color: Colors.grey, width: 0.5)),
+                        borderRadius: BorderRadius.all(Radius.circular(90.0))),
                     labelText: 'Data de nascimento',
                   ),
                 ),
-                SizedBox(height: 16),
-                TextField(
+                const SizedBox(height: 16),
+                const TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(90.0)),
-                        borderSide: BorderSide(color: Colors.grey, width: 0.5)),
+                        borderRadius: BorderRadius.all(Radius.circular(90.0))),
                     labelText: 'Celular',
                   ),
                 ),
-                SizedBox(height: 16),
-                TextField(
+                const SizedBox(height: 16),
+                const TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(90.0)),
-                        borderSide: BorderSide(color: Colors.grey, width: 0.5)),
+                        borderRadius: BorderRadius.all(Radius.circular(90.0))),
                     labelText: 'E-mail',
                   ),
                 ),
-                SizedBox(height: 16),
-                TextField(
+                const SizedBox(height: 16),
+                const TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(90.0)),
-                        borderSide: BorderSide(color: Colors.grey, width: 0.5)),
+                        borderRadius: BorderRadius.all(Radius.circular(90.0))),
                     labelText: 'CPF',
                   ),
                 ),
-                SizedBox(height: 16),
-                TextField(
+                const SizedBox(height: 16),
+                const TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(90.0)),
-                        borderSide: BorderSide(color: Colors.grey, width: 0.5)),
-                    labelText: 'Username',
+                        borderRadius: BorderRadius.all(Radius.circular(90.0))),
+                    labelText: 'Crie seu username aqui',
                   ),
                 ),
-                SizedBox(height: 16),
-                TextField(
+                const SizedBox(height: 16),
+                const TextField(
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.all(Radius.circular(90.0)),
-                        borderSide: BorderSide(color: Colors.grey, width: 0.5)),
-                    labelText: 'Senha',
+                        borderRadius: BorderRadius.all(Radius.circular(90.0))),
+                    labelText: 'Crie sua senha aqui',
                   ),
                 ),
-                SizedBox(height: 42),
+                const SizedBox(height: 42),
                 ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.green,
+                        primary: Colors.green,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(26.0),
                             side: BorderSide(color: Colors.green))
