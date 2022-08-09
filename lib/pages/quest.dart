@@ -9,6 +9,8 @@ class QuestPage extends StatefulWidget {
 }
 
 class _QuestPageState extends State<QuestPage> {
+
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,7 +26,7 @@ class _QuestPageState extends State<QuestPage> {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return const HomePage();
+                    return const Homepage();
                   },
                 ),
               );
@@ -34,7 +36,7 @@ class _QuestPageState extends State<QuestPage> {
         ],
       ),
 
-      backgroundColor: Colors.green[100],
+      backgroundColor: Colors.green,
       body: ListView(
         children: [
           Container(
@@ -42,7 +44,7 @@ class _QuestPageState extends State<QuestPage> {
             padding: EdgeInsets.all(10.0),
             alignment: Alignment.topLeft,
             width: 400,
-            height: 1200,
+            height: 800,
             //decoration: BoxDecoration(
               //border: Border.all(),
             //),
@@ -56,19 +58,73 @@ class _QuestPageState extends State<QuestPage> {
                 Text("b) heterotróficas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
                 Text("c) eucarióticas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
                 Text("d) procarióticas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
-                SizedBox(height: 200),
-                
-                Text("RESPOSTA Q.1", style: TextStyle(fontSize: 25)),
+
                 SizedBox(height: 8),
-                Text("Alternativa C",textAlign: TextAlign.left, style: TextStyle(fontSize: 18, color: Colors.red[900], fontWeight: FontWeight.bold)),
-                SizedBox(height:30),
-                Text("As células que possuem núcleo delimitado pela carioteca são chamadas de eucarióticas. Aquelas que possuem material genético disperso no citoplasma recebem o nome de procarióticas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
+                Padding(
+                  padding: EdgeInsets.all(16),
+                  child: InkWell(
+                    splashColor: Color(0xFF0B4619),
+                      onTap: () {
+                        const snackBar = SnackBar(
+                          content: Text('c) Eucarióticas.'),
+                        );
+
+                        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                        },
+                      child: const Padding(
+                        padding: EdgeInsets.all(16),
+                        child: Text("CLIQUE AQUI PARA VER A RESPOSTA"),
+                      ),
+                  ),
+                  ),
+            ],
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.all(30.0),
+            padding: EdgeInsets.all(10.0),
+            alignment: Alignment.topLeft,
+            width: 400,
+            height: 800,
+            //decoration: BoxDecoration(
+            //border: Border.all(),
+            //),
+
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text("Q.1 - Costuma-se dizer que as células são formadas por membrana, citoplasma e núcleo. Entretanto, não são todas as células que apresentam um núcleo definido e delimitado por membrana nuclear. Baseando-se nisso, o mais correto seria afirmar que todas as células possuem membrana, citoplasma e material genético. As células que apresentam núcleo definido são chamadas de:", textAlign: TextAlign.justify, style: TextStyle(fontSize: 25)),
+                SizedBox(height: 8),
+                Text("a) autotróficas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
+                Text("b) heterotróficas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
+                Text("c) eucarióticas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
+                Text("d) procarióticas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
+
+                SizedBox(height: 8),
+                Padding(
+                  padding: EdgeInsets.all(16),
+                  child: InkWell(
+                    splashColor: Color(0xFF0B4619),
+                    onTap: () {
+                      const snackBar = SnackBar(
+                        content: Text('MOPA'),
+                      );
+
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                    },
+                    child: const Padding(
+                      padding: EdgeInsets.all(16),
+                      child: Text("CLIQUE AQUI PARA VER A RESPOSTA"),
+                    ),
+                  ),
+                ),
               ],
             ),
           ),
-        ],
-      ),
-    );
+
+            ]
+            ),
+            );
   }
 
   void goHome() {
@@ -76,9 +132,12 @@ class _QuestPageState extends State<QuestPage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const HomePage();
+          return const Homepage();
         },
       ),
     );
   }
+}
+
+children(Type widget) {
 }
