@@ -36,7 +36,7 @@ class _QuestPageState extends State<QuestPage> {
         ],
       ),
 
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.green[100],
       body: ListView(
         children: [
           Container(
