@@ -29,7 +29,7 @@ class _AssuntosPageState extends State<AssuntosPage> {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return const Homepage();
+                    return const HomePage();
                   },
                 ),
               );
@@ -52,7 +52,7 @@ class _AssuntosPageState extends State<AssuntosPage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const Homepage();
+          return const HomePage();
         },
       ),
     );

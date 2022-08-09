@@ -27,7 +27,7 @@ class _QuestoesPageState extends State<QuestoesPage> {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return const Homepage();
+                    return const HomePage();
                   },
                 ),
               );
@@ -50,7 +50,7 @@ class _QuestoesPageState extends State<QuestoesPage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const Homepage();
+          return const HomePage();
         },
       ),
     );

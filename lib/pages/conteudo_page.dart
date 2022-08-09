@@ -24,7 +24,7 @@ class _TelaAssuntosState extends State<TelaAssuntos> {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return const Homepage();
+                      return const HomePage();
                     },
                   ),
               );

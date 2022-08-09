@@ -117,7 +117,7 @@ class _LoginpageState extends State<Loginpage> {
                                       context,
                                       MaterialPageRoute(
                                         builder: (context) {
-                                          return const Homepage();
+                                          return const HomePage();
                                         },
                                       ),
                                     ),
@@ -364,7 +364,7 @@ class _LoginpageState extends State<Loginpage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const Homepage();
+          return const HomePage();
         },
       ),
     );
@@ -376,7 +376,7 @@ class _LoginpageState extends State<Loginpage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const Homepage();
+          return const HomePage();
         },
       ),
     );

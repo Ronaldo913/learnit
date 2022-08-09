@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learnit/pages/assuntos_page.dart';
+import 'package:learnit/pages/perfil_page.dart';
 import 'package:learnit/pages/questoes_page.dart';
 import 'package:learnit/pages/pacote_page.dart';
 
@@ -18,37 +19,50 @@ class _HomePageState extends State<HomePage> {
       drawer: Drawer(
         child: ListView(
           children: [
-            DrawerHeader(
-                child: Text("Menu do Learnit",
-                  style: TextStyle(
-                    fontSize: 24
-                  ),
+             InkWell(
+               onTap: (){
+                 Navigator.push(
+                   context,
+                   MaterialPageRoute(
+                     builder: (context) {
+                       return const PerfilPage();
+                     },
+                   ),
+                 );
+               },
+               child: const UserAccountsDrawerHeader(
+                accountName: Text("Usuário"),
+                accountEmail: Text("usuario123@gmail.com"),
+                              currentAccountPicture: CircleAvatar(
+                  radius: 30.0,
+                  backgroundImage:
+                  NetworkImage(
+                      'https://www.lacazmartins.com.br/wp-content/uploads/2017/05/sem-foto-oficial.png'),
+                  backgroundColor: Colors.transparent,
                 ),
-              decoration: BoxDecoration(
-                color: Colors.cyan
-              ),
             ),
+             ),
             ListTile(
-              leading: Icon(Icons.account_circle,
+              leading: Icon(Icons.event_note,
               ),
-              title: Text("Perfil",
+              title: Text("Cronograma",
                 style: TextStyle(
                   fontSize: 24
                 ),
               ),
-              subtitle: Text("Perfil do usuário...",
+              subtitle: Text("Um cronograma para você...",
                 style: TextStyle(
                     fontSize: 18,
                 ),
               ),
                 trailing: IconButton(
-                  icon: Icon(Icons.account_circle),
+                  icon: Icon(Icons.arrow_forward_outlined),
                   onPressed: () {
-                    Navigator.pushReplacement(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return const perfilPage();
+                          return const PerfilPage();
                         },
                       ),
                     );

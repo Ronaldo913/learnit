@@ -24,7 +24,7 @@ class _QuestPageState extends State<QuestPage> {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return const Homepage();
+                    return const HomePage();
                   },
                 ),
               );
@@ -76,7 +76,7 @@ class _QuestPageState extends State<QuestPage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const Homepage();
+          return const HomePage();
         },
       ),
     );
