@@ -23,7 +23,7 @@ class _LoginpageState extends State<Loginpage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 40,
             ),
             Container(
@@ -31,8 +31,8 @@ class _LoginpageState extends State<Loginpage> {
               width: 190,
               child: Image.network('https://ronaldo913.github.io/ImagensPMovel/images/png_20220714_132922_0000.png'),
             ),
-            SizedBox(
-              height: 60,
+            const SizedBox(
+              height: 20,
             ),
             Container(
               child: Form(
@@ -91,6 +91,7 @@ class _LoginpageState extends State<Loginpage> {
                               ),
                               border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(90.0)), borderSide: BorderSide(color: Colors.grey, width: 0.5)),
                             ),
+                            obscureText: true,
                             validator: (String? value) {
                               if (value == null || value.isEmpty || value.length < 8) {
                                 return 'A senha deve ter pelo menos 8 caracters';
@@ -136,7 +137,14 @@ class _LoginpageState extends State<Loginpage> {
                                   child: ElevatedButton(
                                     onPressed: () {
                                       if (_formKey.currentState!.validate()) {
-                                        animacao();
+                                        Navigator.pushReplacement(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) {
+                                              return const AnimationPage(page: HomePage());
+                                            },
+                                          ),
+                                        );
                                       }
                                     },
                                     child: const Padding(
@@ -185,20 +193,21 @@ class _LoginpageState extends State<Loginpage> {
                 ),
               ),
             ),
-            SizedBox(
-              height: 40,
+            const SizedBox(
+              height: 50,
             ),
             Container(
               height:60,
+              width: 380,
               alignment: Alignment.centerLeft,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end:Alignment.bottomRight,
                     stops:[0.3,1],
                     colors:[
-                      Color(0xFFF58524),
-                      Color(0xFFF92B7F),
+                      Color(0xFFF36B537),
+                      Color(0xFFF177e19),
                     ],
                   ),
                   borderRadius: BorderRadius.all(
@@ -206,39 +215,44 @@ class _LoginpageState extends State<Loginpage> {
                   )
               ),
               child:SizedBox.expand(
-                child:FlatButton(
-                  child:Row(
+                child: TextButton(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      Text(
-                        "Login",
+                      const Text(
+                        "Nosso site",
                         style:TextStyle(
                           fontWeight: FontWeight.bold,
                           color:Colors.white,
-                          fontSize:20,
+                          fontSize: 18,
                         ),
                         textAlign: TextAlign.left,
                       ),
                       Container(
                         child:SizedBox(
-                          child:Image.asset("assets/bone.png"),
+                          child: Image.network('https://ronaldo913.github.io/ImagensPMovel/images/web%20(1).png'),
                           height: 28,
                           width:28,
                         ),
                       ),
                     ],
                   ),
-                  onPressed: () => {},
+                  style:
+                  ElevatedButton.styleFrom(
+                    padding: EdgeInsets.all(20),
+                  ),
+                  onPressed: openSite,
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
               height:60,
+              width: 380,
               alignment: Alignment.centerLeft,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
                     end:Alignment.bottomRight,
@@ -253,79 +267,88 @@ class _LoginpageState extends State<Loginpage> {
                   )
               ),
               child:SizedBox.expand(
-                child:FlatButton(
+                child: TextButton(
                   child:Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      Text(
-                        "Login",
+                      const Text(
+                        "Instagram",
                         style:TextStyle(
                           fontWeight: FontWeight.bold,
                           color:Colors.white,
-                          fontSize:20,
+                          fontSize: 18,
                         ),
                         textAlign: TextAlign.left,
                       ),
                       Container(
                         child:SizedBox(
-                          child:Image.asset("assets/bone.png"),
+                          child: Image.network('https://ronaldo913.github.io/ImagensPMovel/images/instagram.png'),
                           height: 28,
                           width:28,
                         ),
                       ),
                     ],
                   ),
+                  style:
+                  ElevatedButton.styleFrom(
+                    padding: EdgeInsets.all(20),
+                  ),
                   onPressed: () => {},
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
               height: 60,
+              width: 380,
               alignment: Alignment.bottomCenter,
-              decoration: BoxDecoration(
-                color:Color(0xFF3C5A99),
+              decoration: const BoxDecoration(
+                color:Color(0xFFF4285f4),
                 borderRadius: BorderRadius.all(
                   Radius.circular(70),
                 ),
               ),
               child: SizedBox.expand(
-                child:FlatButton(
+                child: TextButton(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      Text(
-                        "Login com Facebook",
+                      const Text(
+                        "Google",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color:Colors.white,
-                          fontSize:16,
+                          fontSize:18,
                         ),
                         textAlign: TextAlign.left,
                       ),
                       Container(
                         child: SizedBox(
-                          child: Image.network("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAYFBMVEU6VZ////8qS5yosdA4U54rS5r8/P0uTZtDXKOfqcs0UJ1wgbX29/q3v9gbQZfj5e9ccKxpe7J3h7jCyN7r7fQjRZmMmMJTaah+jLvS1uZLYqWXosfKz+EGOJMSPJWwudSSdZ67AAABTElEQVRoge3XYXOCMAyAYcAAFVhRtDimm///X24fNlsK9UIadmyX92vvntvN2MYkkSRJ2loAULkBH11lpToca6cDl15m3emcjjtlLHRlel/+6oUFzy7tlGbCzesczYObft7mwPMuYDPgoEI2A66H9fCqDtrxuAn/4dE4vIXtaLy8roib24Qs2u/Ou0hc+1dKW7/rn2I/zw/fNlWk6JR5+IXRBg8fNJ89we88z8M8Hjsfz/FccMHROMMowqMJDk4kWtkSD3fPFAVXTWEb42nhHnXLbzFQTYqLsOWi8WIxvQBvzIp4S7jc0Thl90fjlK8rGu8J7ykap/zeQuPLaTxeECYRjbeUGxKL32i4f1vNR9pxQe1t3gY9XO3RkbTZQfko12N8p+1Z9Nb4jx7orb/+Yfzv/lsE/31cRlFwPC7TIvhGcBlFwTeCyyguxj8B/JEUhCero8IAAAAASUVORK5CYII="),
+                          child: Image.network('https://ronaldo913.github.io/ImagensPMovel/images/google.png'),
                           height: 28,
                           width: 28,
                         ),
                       ),
                     ],
                   ),
+                  style:
+                  ElevatedButton.styleFrom(
+                    padding: EdgeInsets.all(20),
+                  ),
                   onPressed: () {},
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height:10,
             ),
             Container(
                 height: 40,
-                child:FlatButton(
+                child: TextButton(
                   child: Text(
-                    "Cadastre-se",
+                    "Siga-nos",
                     textAlign: TextAlign.center,
                   ),
 
@@ -370,15 +393,7 @@ class _LoginpageState extends State<Loginpage> {
     );
   }
 
-  void animacao() async {
-    await Future.delayed(const Duration(seconds: 4));
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (context) {
-          return const HomePage();
-        },
-      ),
-    );
+  void openSite() async {
+    
   }
 }
