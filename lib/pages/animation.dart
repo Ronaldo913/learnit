@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:learnit/pages/login_page.dart';
 
 class AnimationPage extends StatefulWidget {
-  const AnimationPage({Key? key}) : super(key: key);
+  final Widget page;
+
+  const AnimationPage({Key? key, required this.page}) : super(key: key);
 
   @override
   State<AnimationPage> createState() => _AnimationPageState();
@@ -38,7 +40,7 @@ class _AnimationPageState extends State<AnimationPage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const Loginpage();
+          return widget.page;
         },
       ),
     );
