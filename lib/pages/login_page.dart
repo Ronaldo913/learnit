@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import  'package:learnit/pages/animation.dart';
+import 'package:learnit/pages/animation.dart';
 import 'package:learnit/pages/pacote_page.dart';
 import 'package:learnit/pages/home_page.dart';
 import 'package:learnit/pages/registration_page.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Loginpage extends StatefulWidget {
   const Loginpage({Key? key}) : super(key: key);
@@ -29,7 +30,8 @@ class _LoginpageState extends State<Loginpage> {
             Container(
               height: 210,
               width: 190,
-              child: Image.network('https://ronaldo913.github.io/ImagensPMovel/images/png_20220714_132922_0000.png'),
+              child: Image.network(
+                  'https://ronaldo913.github.io/ImagensPMovel/images/png_20220714_132922_0000.png'),
             ),
             const SizedBox(
               height: 20,
@@ -60,7 +62,11 @@ class _LoginpageState extends State<Loginpage> {
                                 Icons.email,
                                 color: Colors.grey,
                               ),
-                              border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(90.0)), borderSide: BorderSide(color: Colors.grey, width: 0.5)),
+                              border: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(90.0)),
+                                  borderSide: BorderSide(
+                                      color: Colors.grey, width: 0.5)),
                             ),
                             validator: (String? value) {
                               if (value == null || value.isEmpty) {
@@ -89,11 +95,17 @@ class _LoginpageState extends State<Loginpage> {
                                 Icons.key,
                                 color: Colors.grey,
                               ),
-                              border: OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(90.0)), borderSide: BorderSide(color: Colors.grey, width: 0.5)),
+                              border: OutlineInputBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(90.0)),
+                                  borderSide: BorderSide(
+                                      color: Colors.grey, width: 0.5)),
                             ),
                             obscureText: true,
                             validator: (String? value) {
-                              if (value == null || value.isEmpty || value.length < 8) {
+                              if (value == null ||
+                                  value.isEmpty ||
+                                  value.length < 8) {
                                 return 'A senha deve ter pelo menos 8 caracters';
                               }
                               return null;
@@ -103,17 +115,21 @@ class _LoginpageState extends State<Loginpage> {
                             height: 10,
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(top: 14.0, left: 8.0),
+                            padding:
+                                const EdgeInsets.only(top: 14.0, left: 8.0),
                             child: Row(
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.only(right: 05.0),
-                                  child: const Icon(Icons.lock_open_sharp, color: Colors.green),
+                                  child: const Icon(Icons.lock_open_sharp,
+                                      color: Colors.green),
                                 ),
                                 Padding(
                                   padding: EdgeInsets.all(0),
                                   child: new InkWell(
-                                    child: Text('Recuperar senha', style: TextStyle(fontSize: 14, color: Colors.green)),
+                                    child: Text('Recuperar senha',
+                                        style: TextStyle(
+                                            fontSize: 14, color: Colors.green)),
                                     onTap: () => Navigator.push(
                                       context,
                                       MaterialPageRoute(
@@ -141,7 +157,8 @@ class _LoginpageState extends State<Loginpage> {
                                           context,
                                           MaterialPageRoute(
                                             builder: (context) {
-                                              return const AnimationPage(page: HomePage());
+                                              return const AnimationPage(
+                                                  page: HomePage());
                                             },
                                           ),
                                         );
@@ -158,7 +175,11 @@ class _LoginpageState extends State<Loginpage> {
                                     ),
                                     style: ElevatedButton.styleFrom(
                                       primary: Colors.green,
-                                      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18.0), side: BorderSide(color: Colors.green)),
+                                      shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(18.0),
+                                          side:
+                                              BorderSide(color: Colors.green)),
                                     ),
                                   ),
                                 ),
@@ -178,8 +199,10 @@ class _LoginpageState extends State<Loginpage> {
                                     style: ElevatedButton.styleFrom(
                                       primary: Colors.white,
                                       shape: RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.circular(18.0),
-                                          side: BorderSide(color: Colors.green)),
+                                          borderRadius:
+                                              BorderRadius.circular(18.0),
+                                          side:
+                                              BorderSide(color: Colors.green)),
                                     ),
                                   ),
                                 ),
@@ -197,48 +220,47 @@ class _LoginpageState extends State<Loginpage> {
               height: 50,
             ),
             Container(
-              height:60,
+              height: 60,
               width: 380,
               alignment: Alignment.centerLeft,
               decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
-                    end:Alignment.bottomRight,
-                    stops:[0.3,1],
-                    colors:[
+                    end: Alignment.bottomRight,
+                    stops: [0.3, 1],
+                    colors: [
                       Color(0xFFF36B537),
                       Color(0xFFF177e19),
                     ],
                   ),
                   borderRadius: BorderRadius.all(
                     Radius.circular(80),
-                  )
-              ),
-              child:SizedBox.expand(
+                  )),
+              child: SizedBox.expand(
                 child: TextButton(
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       const Text(
                         "Nosso site",
-                        style:TextStyle(
+                        style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color:Colors.white,
+                          color: Colors.white,
                           fontSize: 18,
                         ),
                         textAlign: TextAlign.left,
                       ),
                       Container(
-                        child:SizedBox(
-                          child: Image.network('https://ronaldo913.github.io/ImagensPMovel/images/web%20(1).png'),
+                        child: SizedBox(
+                          child: Image.network(
+                              'https://ronaldo913.github.io/ImagensPMovel/images/web%20(1).png'),
                           height: 28,
-                          width:28,
+                          width: 28,
                         ),
                       ),
                     ],
                   ),
-                  style:
-                  ElevatedButton.styleFrom(
+                  style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.all(20),
                   ),
                   onPressed: openSite,
@@ -249,51 +271,50 @@ class _LoginpageState extends State<Loginpage> {
               height: 10,
             ),
             Container(
-              height:60,
+              height: 60,
               width: 380,
               alignment: Alignment.centerLeft,
               decoration: const BoxDecoration(
                   gradient: LinearGradient(
                     begin: Alignment.topLeft,
-                    end:Alignment.bottomRight,
-                    stops:[0.3,1],
-                    colors:[
+                    end: Alignment.bottomRight,
+                    stops: [0.3, 1],
+                    colors: [
                       Color(0xFFF58524),
                       Color(0xFFF92B7F),
                     ],
                   ),
                   borderRadius: BorderRadius.all(
                     Radius.circular(80),
-                  )
-              ),
-              child:SizedBox.expand(
+                  )),
+              child: SizedBox.expand(
                 child: TextButton(
-                  child:Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       const Text(
                         "Instagram",
-                        style:TextStyle(
+                        style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color:Colors.white,
+                          color: Colors.white,
                           fontSize: 18,
                         ),
                         textAlign: TextAlign.left,
                       ),
                       Container(
-                        child:SizedBox(
-                          child: Image.network('https://ronaldo913.github.io/ImagensPMovel/images/instagram.png'),
+                        child: SizedBox(
+                          child: Image.network(
+                              'https://ronaldo913.github.io/ImagensPMovel/images/instagram.png'),
                           height: 28,
-                          width:28,
+                          width: 28,
                         ),
                       ),
                     ],
                   ),
-                  style:
-                  ElevatedButton.styleFrom(
+                  style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.all(20),
                   ),
-                  onPressed: () => {},
+                  onPressed: openInstagram,
                 ),
               ),
             ),
@@ -305,7 +326,7 @@ class _LoginpageState extends State<Loginpage> {
               width: 380,
               alignment: Alignment.bottomCenter,
               decoration: const BoxDecoration(
-                color:Color(0xFFF4285f4),
+                color: Color(0xFFF4285f4),
                 borderRadius: BorderRadius.all(
                   Radius.circular(70),
                 ),
@@ -319,51 +340,37 @@ class _LoginpageState extends State<Loginpage> {
                         "Google",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color:Colors.white,
-                          fontSize:18,
+                          color: Colors.white,
+                          fontSize: 18,
                         ),
                         textAlign: TextAlign.left,
                       ),
                       Container(
                         child: SizedBox(
-                          child: Image.network('https://ronaldo913.github.io/ImagensPMovel/images/google.png'),
+                          child: Image.network(
+                              'https://ronaldo913.github.io/ImagensPMovel/images/google.png'),
                           height: 28,
                           width: 28,
                         ),
                       ),
                     ],
                   ),
-                  style:
-                  ElevatedButton.styleFrom(
+                  style: ElevatedButton.styleFrom(
                     padding: EdgeInsets.all(20),
                   ),
-                  onPressed: () {},
+                  onPressed: openGoogle,
                 ),
               ),
             ),
             const SizedBox(
-              height:10,
+              height: 10,
             ),
             Container(
-                height: 40,
-                child: TextButton(
-                  child: Text(
-                    "Siga-nos",
-                    textAlign: TextAlign.center,
-                  ),
-
-                  onPressed: (){
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return const RegistrationPage();
-                        },
-                      ),
-                    );
-                  },
-
-                )
+              height: 40,
+              child: Text(
+                "Siga-nos",
+                textAlign: TextAlign.center,
+              ),
             ),
           ],
         ),
@@ -394,6 +401,29 @@ class _LoginpageState extends State<Loginpage> {
   }
 
   void openSite() async {
-    
+    const url = 'https://ronaldo913.github.io/ImagensPMovel/index.html';
+    if (await canLaunch(url)) {
+      await launch(url, forceSafariVC: true, forceWebView: true);
+    } else {
+      throw 'Não foi possível iniciar $url';
+    }
+  }
+
+  void openInstagram() async {
+    const url = 'https://www.instagram.com/learnit_plus/';
+    if (await canLaunch(url)) {
+      await launch(url, forceSafariVC: true, forceWebView: true);
+    } else {
+      throw 'Não foi possível iniciar $url';
+    }
+  }
+
+  void openGoogle() async {
+    const url = 'https://ronaldo913.github.io/ImagensPMovel/index.html';
+    if (await canLaunch(url)) {
+      await launch(url, forceSafariVC: true, forceWebView: true);
+    } else {
+      throw 'Não foi possível iniciar $url';
+    }
   }
 }
