@@ -5,6 +5,8 @@ import 'package:learnit/pages/home_page.dart';
 import 'package:learnit/pages/registration_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+//https://pub.dev/packages/url_launcher
+
 class Loginpage extends StatefulWidget {
   const Loginpage({Key? key}) : super(key: key);
 
