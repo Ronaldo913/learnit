@@ -10,10 +10,7 @@ void main() {
       create: (context) => UsuarioRepository(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        /*title: 'Perfil',
-        //theme: ThemeData(
-        //  primarySwatch: Colors.indigo,
-        ),*/
+        
         home: Loginpage(),
       )));
 }
