@@ -3,6 +3,7 @@ import 'package:learnit/pages/animation.dart';
 import 'package:learnit/pages/pacote_page.dart';
 import 'package:learnit/pages/home_page.dart';
 import 'package:learnit/pages/registration_page.dart';
+import 'package:learnit/pages/recuperacao.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 //https://pub.dev/packages/url_launcher
@@ -136,7 +137,7 @@ class _LoginpageState extends State<Loginpage> {
                                       context,
                                       MaterialPageRoute(
                                         builder: (context) {
-                                          return const HomePage();
+                                          return const Recuperacao();
                                         },
                                       ),
                                     ),
@@ -396,7 +397,7 @@ class _LoginpageState extends State<Loginpage> {
       context,
       MaterialPageRoute(
         builder: (context) {
-          return const HomePage();
+          return const Recuperacao();
         },
       ),
     );

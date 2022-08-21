@@ -93,12 +93,12 @@ class _QuestPageState extends State<QuestPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text("Q.1 - Costuma-se dizer que as células são formadas por membrana, citoplasma e núcleo. Entretanto, não são todas as células que apresentam um núcleo definido e delimitado por membrana nuclear. Baseando-se nisso, o mais correto seria afirmar que todas as células possuem membrana, citoplasma e material genético. As células que apresentam núcleo definido são chamadas de:", textAlign: TextAlign.justify, style: TextStyle(fontSize: 25)),
+                Text("Q.2 - XXXXXXXXXXXXXXX", textAlign: TextAlign.justify, style: TextStyle(fontSize: 25)),
                 SizedBox(height: 8),
-                Text("a) autotróficas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
-                Text("b) heterotróficas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
-                Text("c) eucarióticas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
-                Text("d) procarióticas.",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
+                Text("a) XXXXXXXXXXXXXX",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
+                Text("b) XXXXXXXXXXXXX",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
+                Text("c) XXXXXXXX",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
+                Text("d) XXXXXXXXXXXXXXXX",textAlign: TextAlign.justify, style: TextStyle(fontSize: 18)),
 
                 SizedBox(height: 8),
                 Padding(
@@ -107,7 +107,7 @@ class _QuestPageState extends State<QuestPage> {
                     splashColor: Color(0xFF0B4619),
                     onTap: () {
                       const snackBar = SnackBar(
-                        content: Text('MOPA'),
+                        content: Text('RESP2'),
                       );
 
                       ScaffoldMessenger.of(context).showSnackBar(snackBar);
