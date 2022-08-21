@@ -11,6 +11,6 @@ void main() {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         
-        home: Loginpage(),
+        home: AnimationPage(page:Loginpage()),
       )));
 }
