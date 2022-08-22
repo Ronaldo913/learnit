@@ -1,4 +1,4 @@
-import 'package:sqflite/sqflite.dart';
+/*import 'package:sqflite/sqflite.dart';
 import 'package:sqflite/sqlite_api.dart';
 import 'package:path/path.dart';
 
@@ -31,4 +31,4 @@ class DB {
 
   String get _usuario =>
       '''CREATE TABLE usuario (id INTEGER PRIMARY KEY AUTOINCREMENT, assuntos_estudados INTEGER);''';
-}
+}*/
