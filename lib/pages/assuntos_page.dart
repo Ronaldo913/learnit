@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:learnit/pages/conteudo_page.dart';
 import 'package:learnit/pages/home_page.dart';
-import 'package:learnit/domain/progresso.dart';
-import 'package:learnit/repositories/usuario_repository.dart';
-import 'package:provider/provider.dart';
+//import 'package:learnit/domain/progresso.dart';
+//import 'package:learnit/repositories/usuario_repository.dart';
+//import 'package:provider/provider.dart';
 
 class AssuntosPage extends StatefulWidget {
   const AssuntosPage({Key? key}) : super(key: key);
@@ -16,10 +16,10 @@ class AssuntosPage extends StatefulWidget {
 
 class _AssuntosPageState extends State<AssuntosPage> {
   //Progresso p = Progresso(cliques: 0);
-  late UsuarioRepository usuario;
+  //late UsuarioRepository usuario;
   @override
   Widget build(BuildContext context) {
-    usuario = context.watch<UsuarioRepository>();
+    //usuario = context.watch<UsuarioRepository>();
 
     return Scaffold(
       backgroundColor: Colors.green[200],
@@ -101,7 +101,7 @@ class _AssuntosPageState extends State<AssuntosPage> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          usuario.setAssuntos_estudados(1);
+                          //usuario.setAssuntos_estudados(1);
                           return TelaAssuntos();
                         },
                       ),
