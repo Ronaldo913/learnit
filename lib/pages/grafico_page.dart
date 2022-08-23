@@ -91,22 +91,28 @@ class _PerfilPageState extends State<PerfilPage> {
         //mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(
-            height: 50,
-          ),
-          Container(
-            // padding: const EdgeInsets.all(0),
-            //margin: const EdgeInsets.all(1),
-            alignment: Alignment.center,
-            /*decoration: BoxDecoration(
-              color: Color(0xffd5f0d6),
-              shape: BoxShape.circle,
-            ),*/
-            //constraints: BoxConstraints.tightForFinite(
-            //width: 1000,
-            // ),
-            //transform: Matrix4.rotationX(7.4),
-            child: const Icon(Icons.account_circle,
-                color: Color(0xFF1b5e20), size: 120.0),
+            height: 150,
+            width: double.infinity,
+            child: Card(
+              //color: Color(0xff4b844d),
+              shape:
+                  //CircleBorder(
+                  RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Card(
+                shape: CircleBorder(),
+                margin: EdgeInsets.all(10),
+                //child:
+                //Padding(
+                //padding: EdgeInsets.all(8),
+                child: const Icon(Icons.account_circle,
+                    color: Color(0xFF1b5e20), size: 120.0),
+                color: Colors.white,
+              ),
+            ),
+
+            //Color(0xffc2e1c3),
           ),
           SizedBox(height: 30),
           Row(
