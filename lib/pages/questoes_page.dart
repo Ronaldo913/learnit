@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learnit/pages/quest.dart';
-
+import 'package:learnit/domain/questoes.dart';
+import 'package:learnit/database/db.dart';
 import 'home_page.dart';
 
 class QuestoesPage extends StatefulWidget {
@@ -11,6 +12,7 @@ class QuestoesPage extends StatefulWidget {
 }
 
 class _QuestoesPageState extends State<QuestoesPage> {
+  static List<Questoes> lista = db.listaquest;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,10 +39,11 @@ class _QuestoesPageState extends State<QuestoesPage> {
         ],
       ),
       body: Padding(padding: const EdgeInsets.all(16.0),
-        child: ListView(
-          children: [
-            buildCardQuestoes(titulo: "Citologia", context: context)
-          ],
+        child: ListView.builder(
+          itemCount: lista.length,
+          itemBuilder: (BuildContext context, int index) {
+            return buildCardQuestoes(titulo: lista[index]);
+          },
         ),
       ),
     );
@@ -58,7 +61,7 @@ class _QuestoesPageState extends State<QuestoesPage> {
 
 }
 buildCardQuestoes({
-  required String titulo,
+  required String titulo  
   required BuildContext context
 }) {
   return Card(
