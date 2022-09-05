@@ -32,3 +32,16 @@ class DB {
   String get _usuario =>
       '''CREATE TABLE usuario (id INTEGER PRIMARY KEY AUTOINCREMENT, assuntos_estudados INTEGER);''';
 }*/
+class BDquest{
+  static List<Questoes> listaquest= [
+    Questoes(titulo: 'Citologia'),
+    Questoes(titulo: 'Embriologia'),
+    Questoes(titulo: 'Génetica')
+  ];
+  static Future<List<Questoes>> getPacotesTuristicos() async {
+    print("ANTES");
+    await Future.delayed(const Duration(seconds: 10));
+    print("DEPOIS");
+    return lista;
+  }
+}
